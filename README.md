@@ -1,7 +1,9 @@
 # PokedexApp
 ## A Pokedex App made in SwiftUI
 
-<img src="Screenshots/WhiteHome.png" width="585" height="1866" />
+<div align="center">
+  <img src="Screenshots/WhiteHome.png"/>
+</div>
 
 # Credits
 This project with [Idently](https://github.com/indently/MVVMPokedex) base code
