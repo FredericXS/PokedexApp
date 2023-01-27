@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var pokemon = [PokemonEntry]()
     @State var searchText = ""
-    @State var pokeId: Int = 0
+    @State var pokeId = 0
     
     var body: some View {
         NavigationView {
