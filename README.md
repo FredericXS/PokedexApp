@@ -8,4 +8,4 @@ A Pokedex App made in SwiftUI
 Find your favourite Pokemons!
 
 # Credits
-This project with [Idently](https://github.com/indently/MVVMPokedex) base code
+This project was made with [Idently](https://github.com/indently/MVVMPokedex) base code
