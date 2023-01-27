@@ -2,8 +2,8 @@
 ## A Pokedex App made in SwiftUI
 
 <div align="center">
-    ![WhiteScreen](/Screenshots/WhiteHome.png)
-    ![DarkScreen](/Screenshots/DarkHome.png)
+    ![WhiteScreen](Screenshots/WhiteHome.png)
+    ![DarkScreen](Screenshots/DarkHome.png)
 </div>
 
 # Credits
