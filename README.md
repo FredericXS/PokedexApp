@@ -5,6 +5,8 @@ A Pokedex App made in SwiftUI
   <img src="Screenshots/WhiteHome.png"/>
 </div>
 
+View more screenshots [here](https://github.com/FredericXS/PokedexApp/tree/main/Screenshots)
+
 Find your favourite Pokemons!
 
 # Credits
