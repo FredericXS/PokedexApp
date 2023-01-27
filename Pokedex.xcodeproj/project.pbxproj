@@ -5,7 +5,7 @@
 	};
 	objectVersion = 56;
 	objects = {
-
+	
 /* Begin PBXBuildFile section */
 		5F8A67B72981958D00A2B076 /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A67B62981958D00A2B076 /* PokedexApp.swift */; };
 		5F8A67B92981958D00A2B076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A67B82981958D00A2B076 /* ContentView.swift */; };
