@@ -1,14 +1,21 @@
 # PokedexApp
-A Pokedex App made in SwiftUI
+A Pokédex App made in SwiftUI
 
-<div align="center">
-  <img src="Screenshots/WhiteHome.png"/>
+<div>
+  <img src="Screenshots/NewHome.png" width="250"/>
 </div>
 
 View more screenshots [here](https://github.com/FredericXS/PokedexApp/tree/main/Screenshots)
 
 ## Find your favourite Pokemons!
-Search by Pokemon name in the search bar
+Search by Pokémon name in the search bar
 
-# Credits
-This project was made with [Idently](https://github.com/indently/MVVMPokedex) base code
+## What versions does this support?
+Any version on iOS 15.0+
+
+## How can I download this?
+* Clone the project and open in Xcode, and build this in your iPhone.
+
+## Coming soon
+* Filter and sort by name, generation, type and number.
+* Open Pokémon's page to view your curiosities, stats and evolutions
