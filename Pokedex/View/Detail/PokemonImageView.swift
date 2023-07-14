@@ -7,13 +7,17 @@
 
 import SwiftUI
 
-struct PokemonImage: View {
-    var imageLink = ""
+struct PokemonImageView: View {
     @State private var pokemonSprite = ""
     
+    var imageLink = ""
+    
     var body: some View {
-        AsyncImage(url: URL(string: pokemonSprite))
-            .frame(width: 75, height: 75)
+        AsyncImage(url: URL(string: pokemonSprite)) { image in
+            image
+                .resizable()
+                .scaledToFit()
+        } placeholder: {}
             .onAppear {
                 let loadedData = UserDefaults.standard.string(forKey: imageLink)
                 
@@ -25,22 +29,13 @@ struct PokemonImage: View {
                 }
             }
             .foregroundColor(.gray.opacity(0.6))
-            .scaledToFit()
-        
     }
     
     func getSprite(url: String) {
         var tempSprite: String?
-        PokemonSelectedApi().getSprite(url: url) { sprite in
-            tempSprite = sprite.front_default
+        PokemonDetails().getSprite(url: url) { sprite in
+            tempSprite = sprite.other.officialArtwork.front_default
             self.pokemonSprite = tempSprite ?? "placeholder"
         }
-        
-    }
-}
-
-struct PokemonDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        PokemonImage()
     }
 }

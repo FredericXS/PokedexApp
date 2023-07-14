@@ -1,5 +1,5 @@
 //
-//  PokemonSelcted.swift
+//  PokemonData.swift
 //  Pokedex
 //
 //  Created by Ashborn on 26/01/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PokemonSelected: Codable {
+struct PokemonData: Codable {
     var sprites: PokemonSprites
     var weight: Int
     var height: Int
@@ -36,17 +36,32 @@ struct PokemonAbility: Codable {
 }
 
 struct PokemonSprites: Codable {
-    var front_default: String?
+    var front_default: String
+    var other: OtherSprites
+    
+    struct OtherSprites: Codable {
+        var officialArtwork: OfficialSprites
+        
+        private enum CodingKeys: String, CodingKey {
+            case officialArtwork = "official-artwork"
+        }
+    }
+    
+    struct OfficialSprites: Codable {
+        var front_default: String
+    }
 }
 
-class PokemonSelectedApi  {
+
+
+class PokemonDetails  {
     func getSprite(url: String, completion: @escaping (PokemonSprites) -> ()) {
         guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             
-            let pokemonSprite = try! JSONDecoder().decode(PokemonSelected.self, from: data)
+            let pokemonSprite = try! JSONDecoder().decode(PokemonData.self, from: data)
             
             DispatchQueue.main.async {
                 completion(pokemonSprite.sprites)
@@ -62,7 +77,7 @@ class PokemonSelectedApi  {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 guard let data = data else { return }
                 
-                let pokemonType = try! JSONDecoder().decode(PokemonSelected.self, from: data)
+                let pokemonType = try! JSONDecoder().decode(PokemonData.self, from: data)
                 
                 DispatchQueue.main.async {
                     completion(pokemonType.types)
@@ -79,7 +94,7 @@ class PokemonSelectedApi  {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 guard let data = data else { return }
                 
-                let pokemonAbility = try! JSONDecoder().decode(PokemonSelected.self, from: data)
+                let pokemonAbility = try! JSONDecoder().decode(PokemonData.self, from: data)
                 
                 DispatchQueue.main.async {
                     completion(pokemonAbility.abilities)
@@ -95,7 +110,7 @@ class PokemonSelectedApi  {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             
-            let pokemonBase = try! JSONDecoder().decode(PokemonSelected.self, from: data)
+            let pokemonBase = try! JSONDecoder().decode(PokemonData.self, from: data)
             
             DispatchQueue.main.async {
                 completion(pokemonBase.base_experience)
@@ -110,7 +125,7 @@ class PokemonSelectedApi  {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             
-            let pokemonBase = try! JSONDecoder().decode(PokemonSelected.self, from: data)
+            let pokemonBase = try! JSONDecoder().decode(PokemonData.self, from: data)
             
             DispatchQueue.main.async {
                 completion(pokemonBase.id)
@@ -125,7 +140,7 @@ class PokemonSelectedApi  {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             
-            let pokemonBase = try! JSONDecoder().decode(PokemonSelected.self, from: data)
+            let pokemonBase = try! JSONDecoder().decode(PokemonData.self, from: data)
             
             DispatchQueue.main.async {
                 completion(Double(pokemonBase.height))
@@ -140,7 +155,7 @@ class PokemonSelectedApi  {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             
-            let pokemonBase = try! JSONDecoder().decode(PokemonSelected.self, from: data)
+            let pokemonBase = try! JSONDecoder().decode(PokemonData.self, from: data)
             
             DispatchQueue.main.async {
                 completion(Double(pokemonBase.weight))

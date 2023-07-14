@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Pokemon: Codable{
+struct Pokemons: Codable{
     var results: [PokemonEntry]
 }
 
@@ -24,7 +24,7 @@ class PokeApi  {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             
-            let pokemonList = try! JSONDecoder().decode(Pokemon.self, from: data)
+            let pokemonList = try! JSONDecoder().decode(Pokemons.self, from: data)
             
             DispatchQueue.main.async {
                 completion(pokemonList.results)
