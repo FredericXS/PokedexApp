@@ -2,7 +2,7 @@
 A Pokédex App made in SwiftUI
 
 <div align="center">
-  <img src="Screenshots/NewHome.png"/>
+  <img src="Screenshots/NewHome.png" width="250"/>
 </div>
 
 View more screenshots [here](https://github.com/FredericXS/PokedexApp/tree/main/Screenshots)
