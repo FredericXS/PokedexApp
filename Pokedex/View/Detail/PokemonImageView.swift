@@ -31,6 +31,7 @@ struct PokemonImageView: View {
             .foregroundColor(.gray.opacity(0.6))
     }
     
+    // Can't implement in PokemonDataViewModel because you'll got network error
     func getSprite(url: String) {
         var tempSprite: String?
         PokemonDetails().getSprite(url: url) { sprite in

@@ -15,6 +15,8 @@ struct ContentView: View {
             ScrollView {
                 ForEach(viewModel.filteredPokemons) { entry in
                     CardView(name: entry.name, url: entry.url)
+                        .padding(.vertical, 10)
+                        .shadow(color: .gray, radius: 4, x: 0, y: 6)
                 }
             }
             .onAppear { viewModel.fetchData() }
@@ -22,25 +24,7 @@ struct ContentView: View {
             .navigationTitle("Pokédex")
             .navigationViewStyle(.stack)
             .toolbar {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button {
-                        // Ação do primeiro botão
-                    } label: {
-                        Image("Generation")
-                    }
-                    
-                    Button {
-                        // Ação do segundo botão
-                    } label: {
-                        Image("Sort")
-                    }
-                    
-                    Button {
-                        // Ação do terceiro botão
-                    } label: {
-                        Image("Filter")
-                    }
-                }
+                ToolbarView()
             }
         }
     }
