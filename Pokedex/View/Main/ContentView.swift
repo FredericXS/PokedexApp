@@ -16,7 +16,7 @@ struct ContentView: View {
                 ForEach(viewModel.filteredPokemons) { entry in
                     CardView(name: entry.name, url: entry.url)
                         .padding(.vertical, 10)
-                        .shadow(color: .gray, radius: 4, x: 0, y: 6)
+                        .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 6)
                 }
             }
             .onAppear { viewModel.fetchData() }
