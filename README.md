@@ -1,7 +1,7 @@
 # PokedexApp
-A Pokédex App made in SwiftUI
 
-<div>
+<div align="center">
+  <p>A Pokédex App made in SwiftUI</p>
   <img src="Screenshots/Project Mockup.png" width="500"/>
 </div>
 
