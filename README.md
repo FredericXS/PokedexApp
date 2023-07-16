@@ -2,10 +2,8 @@
 A Pokédex App made in SwiftUI
 
 <div>
-  <img src="Screenshots/NewHome.png" width="250"/>
+  <img src="Screenshots/Project Mockup.png" width="500"/>
 </div>
-
-View more screenshots [here](https://github.com/FredericXS/PokedexApp/tree/main/Screenshots)
 
 ## Find your favourite Pokemons!
 Search by Pokémon name in the search bar
