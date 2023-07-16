@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    @ObservedObject var pkdataVM = PokemonDataViewModel()
+    @StateObject var pkdataVM: PokemonDataViewModel
     var name: String
     var url: String
     
@@ -16,7 +16,7 @@ struct CardView: View {
         HStack {
             VStack(spacing: 5) {
                 Text("#\(pkdataVM.pkId)")
-                    .foregroundColor(Color(named: "NumberText"))
+                    .foregroundColor(Color("NumberText"))
                     .font(.subheadline.bold())
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Text(name.capitalized)
@@ -36,7 +36,7 @@ struct CardView: View {
         .padding(.vertical, 5)
         .background {
             RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(Color(named: 0 < pkdataVM.pkTypes.count ? pkdataVM.pkTypes[0].type.name : "normal"))
+                .foregroundColor(Color(0 < pkdataVM.pkTypes.count ? pkdataVM.pkTypes[0].type.name : "normal"))
                 .padding(.horizontal, 25)
                 .overlay(
                     ZStack {

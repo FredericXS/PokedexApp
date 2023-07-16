@@ -10,6 +10,7 @@ import SwiftUI
 class PokemonDataViewModel: ObservableObject {
     @Published var pkId = "001"
     @Published var pkTypes = [PokemonTypes]()
+    @Published var selectedItem: String? = ""
     
     func fetchPokemonDetails(url: String) {
         getId(url: url)

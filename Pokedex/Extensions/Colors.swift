@@ -14,11 +14,4 @@ extension Color {
         let blue = Double(hex & 0xff) / 255
         self.init(.sRGB, red: red, green: green, blue: blue, opacity: alpha)
     }
-    
-    init?(named colorName: String) {
-        guard let color = UIColor(named: colorName) else {
-            return nil
-        }
-        self = Color(color)
-    }
 }

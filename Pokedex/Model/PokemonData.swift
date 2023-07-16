@@ -20,19 +20,20 @@ struct PokemonData: Codable {
 struct PokemonTypes: Codable, Identifiable {
     let id = UUID()
     var type: PokemonType
+    
+    struct PokemonType: Codable {
+        var name: String
+    }
 }
 
-struct PokemonType: Codable {
-    var name: String
-}
 struct PokemonAbilities: Codable, Identifiable {
     let id = UUID()
     var ability: PokemonAbility
     var is_hidden: Bool
-}
-
-struct PokemonAbility: Codable {
-    var name: String
+    
+    struct PokemonAbility: Codable {
+        var name: String
+    }
 }
 
 struct PokemonSprites: Codable {

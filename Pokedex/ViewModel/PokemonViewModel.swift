@@ -10,6 +10,9 @@ import Foundation
 class PokemonViewModel: ObservableObject {
     @Published var pokemons = [PokemonEntry]()
     @Published var searchText = ""
+    @Published var generationSheet = false
+    @Published var sortSheet = false
+    @Published var filterSheet = false
     
     var filteredPokemons: [PokemonEntry] {
         if searchText.isEmpty {

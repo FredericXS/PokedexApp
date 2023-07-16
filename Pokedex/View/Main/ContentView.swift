@@ -11,20 +11,32 @@ struct ContentView: View {
     @StateObject var viewModel = PokemonViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
-                ForEach(viewModel.filteredPokemons) { entry in
-                    CardView(name: entry.name, url: entry.url)
+                ForEach(viewModel.filteredPokemons) { pokemon in
+                    CardView(pkdataVM: PokemonDataViewModel(), name: pokemon.name, url: pokemon.url)
                         .padding(.vertical, 10)
-                        .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 6)
+                        .shadow(color: .gray.opacity(0.5), radius: 4, x: 0, y: 6)
                 }
             }
             .onAppear { viewModel.fetchData() }
             .searchable(text: $viewModel.searchText)
             .navigationTitle("Pokédex")
-            .navigationViewStyle(.stack)
-            .toolbar {
-                ToolbarView()
+            .toolbar { ToolbarView(viewModel: viewModel) }
+            .sheet(isPresented: $viewModel.filterSheet) {
+                FiltersView()
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
+            }
+            .sheet(isPresented: $viewModel.sortSheet) {
+                SortsView()
+                    .presentationDetents([.medium])
+                    .presentationDragIndicator(.visible)
+            }
+            .sheet(isPresented: $viewModel.generationSheet) {
+                GenerationsView()
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
             }
         }
     }

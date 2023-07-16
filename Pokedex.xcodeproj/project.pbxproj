@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8DD0DF2A6386440046A0D1 /* GenerationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DD0DE2A6386440046A0D1 /* GenerationsView.swift */; };
 		1E9D84022A61C7C8005F11F7 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D84012A61C7C8005F11F7 /* Images.swift */; };
 		1E9D84042A61CA11005F11F7 /* PokemonDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D84032A61CA11005F11F7 /* PokemonDataViewModel.swift */; };
 		1E9D84062A61D3C5005F11F7 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D84052A61D3C5005F11F7 /* ToolbarView.swift */; };
 		1ED2D0082A5FBD0A003AC2F4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2D0072A5FBD0A003AC2F4 /* CardView.swift */; };
 		1ED2D00B2A5FBD45003AC2F4 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2D00A2A5FBD45003AC2F4 /* PokemonViewModel.swift */; };
 		1ED2D0112A5FC67C003AC2F4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2D0102A5FC67C003AC2F4 /* Colors.swift */; };
+		1ED405552A62E9F8001C9DCD /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED405542A62E9F8001C9DCD /* FiltersView.swift */; };
+		1ED405582A62FB32001C9DCD /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED405572A62FB32001C9DCD /* Introspect */; };
+		1ED4055A2A62FC6D001C9DCD /* FiltersScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED405592A62FC6D001C9DCD /* FiltersScrollView.swift */; };
+		1ED4055F2A632443001C9DCD /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4055E2A632443001C9DCD /* RangeSliderView.swift */; };
+		1EDAECDD2A635FE00001BBE3 /* FiltersVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAECDC2A635FE00001BBE3 /* FiltersVerticalView.swift */; };
+		1EDAECDF2A6372440001BBE3 /* SortsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAECDE2A6372440001BBE3 /* SortsView.swift */; };
+		1EDAECE12A6374610001BBE3 /* SortsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDAECE02A6374610001BBE3 /* SortsButtonView.swift */; };
 		5F8A67B72981958D00A2B076 /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A67B62981958D00A2B076 /* PokedexApp.swift */; };
 		5F8A67B92981958D00A2B076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A67B82981958D00A2B076 /* ContentView.swift */; };
 		5F8A67BB2981959600A2B076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F8A67BA2981959600A2B076 /* Assets.xcassets */; };
@@ -23,12 +31,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E8DD0DE2A6386440046A0D1 /* GenerationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationsView.swift; sourceTree = "<group>"; };
 		1E9D84012A61C7C8005F11F7 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		1E9D84032A61CA11005F11F7 /* PokemonDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataViewModel.swift; sourceTree = "<group>"; };
 		1E9D84052A61D3C5005F11F7 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		1ED2D0072A5FBD0A003AC2F4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1ED2D00A2A5FBD45003AC2F4 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 		1ED2D0102A5FC67C003AC2F4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1ED405542A62E9F8001C9DCD /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		1ED405592A62FC6D001C9DCD /* FiltersScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersScrollView.swift; sourceTree = "<group>"; };
+		1ED4055E2A632443001C9DCD /* RangeSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderView.swift; sourceTree = "<group>"; };
+		1EDAECDC2A635FE00001BBE3 /* FiltersVerticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersVerticalView.swift; sourceTree = "<group>"; };
+		1EDAECDE2A6372440001BBE3 /* SortsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortsView.swift; sourceTree = "<group>"; };
+		1EDAECE02A6374610001BBE3 /* SortsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortsButtonView.swift; sourceTree = "<group>"; };
 		5F8A67B32981958D00A2B076 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8A67B62981958D00A2B076 /* PokedexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexApp.swift; sourceTree = "<group>"; };
 		5F8A67B82981958D00A2B076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED405582A62FB32001C9DCD /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,10 @@
 			children = (
 				1ED2D0072A5FBD0A003AC2F4 /* CardView.swift */,
 				1E9D84052A61D3C5005F11F7 /* ToolbarView.swift */,
+				1ED405592A62FC6D001C9DCD /* FiltersScrollView.swift */,
+				1ED4055E2A632443001C9DCD /* RangeSliderView.swift */,
+				1EDAECDC2A635FE00001BBE3 /* FiltersVerticalView.swift */,
+				1EDAECE02A6374610001BBE3 /* SortsButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -80,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				5FB28CD42982F3A600089A4C /* PokemonImageView.swift */,
+				1ED405542A62E9F8001C9DCD /* FiltersView.swift */,
+				1EDAECDE2A6372440001BBE3 /* SortsView.swift */,
+				1E8DD0DE2A6386440046A0D1 /* GenerationsView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -167,6 +190,7 @@
 			);
 			name = Pokedex;
 			packageProductDependencies = (
+				1ED405572A62FB32001C9DCD /* Introspect */,
 			);
 			productName = Pokedex;
 			productReference = 5F8A67B32981958D00A2B076 /* Pokedex.app */;
@@ -197,6 +221,7 @@
 			);
 			mainGroup = 5F8A67AA2981958D00A2B076;
 			packageReferences = (
+				1ED405562A62FB32001C9DCD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 5F8A67B42981958D00A2B076 /* Products */;
 			projectDirPath = "";
@@ -224,16 +249,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDAECDF2A6372440001BBE3 /* SortsView.swift in Sources */,
 				1E9D84062A61D3C5005F11F7 /* ToolbarView.swift in Sources */,
 				5FB28CDA2982F51B00089A4C /* PokemonData.swift in Sources */,
 				1ED2D0112A5FC67C003AC2F4 /* Colors.swift in Sources */,
+				1ED4055F2A632443001C9DCD /* RangeSliderView.swift in Sources */,
 				1E9D84042A61CA11005F11F7 /* PokemonDataViewModel.swift in Sources */,
+				1ED405552A62E9F8001C9DCD /* FiltersView.swift in Sources */,
 				5F8A67B92981958D00A2B076 /* ContentView.swift in Sources */,
 				5FB28CD82982F4FE00089A4C /* Pokemons.swift in Sources */,
 				1E9D84022A61C7C8005F11F7 /* Images.swift in Sources */,
+				1E8DD0DF2A6386440046A0D1 /* GenerationsView.swift in Sources */,
+				1EDAECDD2A635FE00001BBE3 /* FiltersVerticalView.swift in Sources */,
 				5F8A67B72981958D00A2B076 /* PokedexApp.swift in Sources */,
 				1ED2D00B2A5FBD45003AC2F4 /* PokemonViewModel.swift in Sources */,
 				5FB28CD52982F3A600089A4C /* PokemonImageView.swift in Sources */,
+				1EDAECE12A6374610001BBE3 /* SortsButtonView.swift in Sources */,
+				1ED4055A2A62FC6D001C9DCD /* FiltersScrollView.swift in Sources */,
 				1ED2D0082A5FBD0A003AC2F4 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +403,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,7 +433,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1ED405562A62FB32001C9DCD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ED405572A62FB32001C9DCD /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED405562A62FB32001C9DCD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F8A67AB2981958D00A2B076 /* Project object */;
 }

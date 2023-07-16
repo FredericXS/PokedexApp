@@ -9,25 +9,26 @@ import SwiftUI
 
 struct ToolbarView: View {
     @Environment(\.colorScheme) var colorScheme
+    @ObservedObject var viewModel: PokemonViewModel
     
     var body: some View {
         HStack {
             Button {
-                // Show different generations
+                viewModel.generationSheet = true
             } label: {
                 Image("Generation")
                     .colorInvertIfNeeded(scheme: colorScheme)
             }
             
             Button {
-                // Sort by
+                viewModel.sortSheet = true
             } label: {
                 Image("Sort")
                     .colorInvertIfNeeded(scheme: colorScheme)
             }
             
             Button {
-                // Filter by
+                viewModel.filterSheet = true
             } label: {
                 Image("Filter")
                     .colorInvertIfNeeded(scheme: colorScheme)
