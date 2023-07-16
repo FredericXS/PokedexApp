@@ -11,7 +11,7 @@ View more screenshots [here](https://github.com/FredericXS/PokedexApp/tree/main/
 Search by Pokémon name in the search bar
 
 ## What versions does this support?
-Any version on iOS 15.0+
+Any version on iOS 16.0+
 
 ## How can I download this?
 * Clone the project and open in Xcode, and build this in your iPhone.
